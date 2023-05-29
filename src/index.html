@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <link href="../dist/output.css" rel="stylesheet"> 
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="text-4xl font-bold text-green-500">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>Club de los Frikis de Ajedrez</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+
+  <main class="container mx-auto">
+
+    <h1 class="text-4xl font-bold text-amber-900 m-5 text-center ">
+      ¡Bienvenid@s al Club de los
+      Frikis
+      de Ajedrez!</h1>
+
+    <p class="m-5 text-center">
+      Nos complace darles la bienvenida a todos los
+      apasionados del ajedrez que buscan mejorar sus habilidades y disfrutar de este juego intelectualmente
+      desafiante.
+      Nuestro club está formado por jugadores de todas las edades y niveles de habilidad, desde principiantes
+      hasta
+      jugadores experimentados. Nos enorgullecemos de ofrecer un ambiente amigable y acogedor para que todos
+      puedan
+      aprender, jugar y socializar juntos. Además, organizamos torneos y eventos especiales para que nuestros
+      miembros
+      puedan poner a prueba sus habilidades y divertirse. Esperamos que disfruten navegando por nuestro sitio
+      web y
+      que
+      se unan a nosotros para compartir su amor por el ajedrez.
+    </p>
+
+    <div class="flex justify-center items-center">
+      <a href="clubMembers.html"> <button
+          class="mr-4 bg-amber-900 p-3 text-white font-bold hover:bg-black hover:text-3xl hover:duration-700">Ver
+          Miembros</button></a>
+      <a href="blog.html"> <button
+          class="bg-amber-900 p-3 text-white font-bold hover:bg-black hover:text-3xl hover:duration-700">Ver
+          Blog</button></a>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+
+    <include src="./views/evento.html"></include>
+
+
+
+  </main>
+
+
+
+
+
+
+
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>
