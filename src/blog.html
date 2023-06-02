@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Blog</title>
+
+    <style>
+        .paragraph {
+            display: none;
+        }
+
+        h3 {
+            cursor: pointer;
+        }
+    </style>
+
+
+
+    <script>
+        function toggleParagraph(id) {
+            var paragraph = document.getElementById(id);
+            var computedStyle = window.getComputedStyle(paragraph);
+
+            if (computedStyle.display === "none") {
+                paragraph.style.display = "block";
+            } else {
+                paragraph.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <include src="./views/header.html"></include>
+
+    <main>
+
+        <h1 class="bg-amber-900 text-white text-center p-7 m-2.5 rounded-2xl text-5xl font-bold">Campeonato
+            Internacional de
+            Ajedrez</h1>
+
+        <article class="overflow-hidden md:mx-20">
+            <div>
+                <img class="animated bounceInUp m-auto w-11/12" src="./assets/images/composing-g61372223b_1280.jpg"
+                    alt="campeonato-de-ajedrez">
+
+                <p class="bg-red-500 m-auto w-11/12 p-2.5">¡¡YA QUEDA POCO PARA EL CAMPEONATO!!</p>
+            </div>
+
+            <section class="p-7 text-center grid lg:grid-cols-2 gap-5">
+                <h2 class="text-4xl font-bold py-5">¡Un evento que no te puedes perder este verano!</h2>
+                <p>Este verano, la ciudad de Barcelona será el escenario del Campeonato
+                    Internacional
+                    de Ajedrez, que
+                    reunirá a los mejores jugadores de todo el mundo para competir en un evento lleno de emociones y
+                    estrategia.</p>
+                <p>El torneo se llevará a cabo en el impresionante Centro de Convenciones de la
+                    ciudad, y contará con la
+                    participación de más de cien jugadores de ajedrez de todo el mundo. Habrá una gran variedad de
+                    jugadores, desde jóvenes prodigios hasta veteranos experimentados, todos dispuestos a demostrar sus
+                    habilidades en el tablero.</p>
+                <p>El campeonato se llevará a cabo en un formato de eliminación simple, donde los
+                    jugadores se
+                    enfrentarán
+                    en partidas a lo largo de varias rondas, hasta que solo quede un ganador. Cada jugador tendrá un
+                    tiempo
+                    límite para cada partida, lo que agrega una emocionante presión al torneo.</p>
+                <p>El torneo comenzará con una ceremonia de apertura llena de espectáculo y música
+                    en
+                    vivo, y los
+                    jugadores
+                    tendrán la oportunidad de conocerse y prepararse para las partidas que les esperan.</p>
+                <p>La primera ronda comenzará al día siguiente, y los jugadores competirán en
+                    partidas intensas durante
+                    todo
+                    el día. Los espectadores podrán disfrutar de la emoción del juego, observando las jugadas de los
+                    maestros y viendo cómo se van desarrollando las partidas en tiempo real.</p>
+                <p>En los días siguientes, el torneo se volverá aún más emocionante, ya que los
+                    jugadores tendrán que
+                    enfrentarse a oponentes cada vez más fuertes. Los partidos serán cada vez más complejos, con
+                    estrategias
+                    y tácticas que dejarán a los espectadores boquiabiertos.</p>
+                <p>Después de varios días de intensa competencia, solo quedará un ganador. Este
+                    jugador será coronado
+                    campeón del Campeonato Internacional de Ajedrez, y recibirá el reconocimiento de todo el mundo por
+                    su
+                    habilidad y estrategia en el juego.</p>
+                <p>Pero el torneo no es solo para los jugadores. Los espectadores también tendrán la
+                    oportunidad de
+                    disfrutar de un ambiente lleno de emociones, con stands y áreas de entretenimiento para toda la
+                    familia.
+                    Habrá áreas de juegos para niños, presentaciones de artistas locales y una gran variedad de
+                    alimentos y
+                    bebidas para disfrutar.</p>
+                <p>Así que si eres un amante del ajedrez, o simplemente estás buscando una
+                    experiencia emocionante este
+                    verano, ¡no te pierdas el Campeonato Internacional de Ajedrez en Barcelona! Este evento será una
+                    oportunidad única para disfrutar de la emoción del juego y conocer a algunos de los mejores
+                    jugadores de
+                    ajedrez del mundo. ¡Nos vemos allí!</p>
+            </section>
+
+            <section class="p-7">
+                <!--CARRUSEL---------------------------------------------------------------------------->
+                <div class="overflow-x-auto whitespace-nowrap">
+                    <div class="inline-block scroll-snap-align-start">
+                        <img src="./assets/images/audiencia-campeonato.png" alt="audiencia-campeonato" class="w-64">
+                    </div>
+                    <div class="inline-block scroll-snap-align-start">
+                        <img src="./assets/images/barcelona-ciudad.png" alt="barcelona-ciudad" class="w-64">
+                    </div>
+                    <div class="inline-block scroll-snap-align-start">
+                        <img src="./assets/images/inauguracion-evento.png" alt="inauguracion-evento" class="w-64">
+                    </div>
+                    <div class="inline-block scroll-snap-align-start">
+                        <img src="./assets/images/juego-de-ajedrez.jpg" alt="juego-de-ajedrez" class="w-64">
+                    </div>
+                    <div class="inline-block scroll-snap-align-start">
+                        <img src="./assets/images/jugadores-en-partida-de-ajedrez.png"
+                            alt="jugadores-en-partida-de-ajedrez" class="w-64">
+                    </div>
+                    <div class="inline-block scroll-snap-align-start">
+                        <img src="./assets/images/partida-ajedraz.png" alt="partida-ajedrez" class="w-64">
+                    </div>
+                    <div class="inline-block scroll-snap-align-start">
+                        <img src="./assets/images/trofeos-de-ajedrez.png" alt="trofeos-de-ajedrez" class="w-64">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="p-7">
+                <h2 class="mb-4 text-center text-2xl font-bold">Informaciones útiles</h2>
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph1')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">
+                        Fecha</h3>
+                    <p id="paragraph1" class="paragraph">El campeonato tendrá lugar durante dos semanas en julio,
+                        <strong> del 10
+                            al 24.</strong>
+                    </p>
+                </div>
+
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph2')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">Ubicación</h3>
+                    <p id="paragraph2" class="paragraph">El evento se llevará a cabo en el <strong> Centro de
+                            Convenciones de
+                            Barcelona</strong>,
+                        situado en el distrito de
+                        Les Corts.</p>
+                </div>
+
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph3')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">Entradas</h3>
+                    <p id="paragraph3" class="paragraph">Las entradas para el evento estarán disponibles para su compra
+                        en <strong> línea</strong>
+                        o en
+                        <strong> taquilla</strong> durante el
+                        evento. El precio de las entradas variará según la ubicación y el día del evento.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph4')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">Programa</h3>
+                    <p id="paragraph4" class="paragraph">El programa completo del campeonato se publicará en el <strong>
+                            sitio web
+                            oficial</strong>
+                        del
+                        evento unos días
+                        antes del inicio del torneo. Este programa incluirá detalles sobre las rondas, los
+                        jugadores,
+                        las partidas y los horarios.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph5')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">Transmisión en
+                        vivo
+                    </h3>
+                    <p id="paragraph5" class="paragraph">El campeonato será <strong>transmitido en vivo por
+                            internet</strong> para
+                        aquellos que no
+                        puedan asistir al
+                        evento en persona. La transmisión en vivo también estará disponible para su compra en
+                        línea.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph6')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">Reglas</h3>
+                    <p id="paragraph6" class="paragraph">El campeonato seguirá las reglas estándar del ajedrez, y se
+                        aplicarán
+                        las
+                        reglas de la <strong> FIDE
+                            (Federación Internacional de Ajedrez)</strong>. Los jugadores deberán cumplir con
+                        estas reglas,
+                        así como
+                        con las reglas específicas del torneo que se publicarán antes del inicio del campeonato.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph7')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">Alojamiento
+                    </h3>
+                    <p id="paragraph7" class="paragraph">Hay una <strong> gran variedad de opciones de alojamiento en la
+                            ciudad de
+                            Barcelona</strong>,
+                        desde hoteles de
+                        lujo hasta hostales económicos. Los organizadores del evento ofrecerán recomendaciones
+                        de
+                        alojamiento cercanas al lugar del campeonato.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph8')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">Transporte</h3>
+                    <p id="paragraph8" class="paragraph">La ciudad de Barcelona cuenta con una excelente red de
+                        transporte
+                        público,
+                        que incluye
+                        <strong> autobuses, metro y tren</strong>. Los organizadores del evento recomiendan
+                        utilizar el transporte
+                        público
+                        para llegar al lugar del campeonato, ya que el estacionamiento puede ser limitado.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph9')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">Comida y bebida
+                    </h3>
+                    <p id="paragraph9" class="paragraph">Habrá una gran variedad de opciones de comida y bebida
+                        <strong> disponibles en el
+                            lugar del campeonato</strong>,
+                        desde opciones de comida rápida hasta restaurantes de alta calidad. También <strong>se
+                            permitirá
+                            llevar
+                            comida y bebida al evento</strong>.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 onclick="toggleParagraph('paragraph10')"
+                        class="border-b border-gray-300 py-2.5 hover:bg-amber-900 hover:text-white pl-2">Seguridad</h3>
+                    <p id="paragraph10" class="paragraph">Los organizadores del evento estarán trabajando en
+                        colaboración
+                        con las
+                        <strong> autoridades locales</strong> para
+                        garantizar la seguridad de todos los asistentes. Se solicita a los asistentes que sigan
+                        las
+                        instrucciones del personal de seguridad y que estén atentos a sus pertenencias en todo
+                        momento.
+                    </p>
+                </div>
+
+                <p class="mt-4 text-center">¡Esperamos que esta lista de informaciones útiles te sea de ayuda para
+                    planificar
+                    tu asistencia al
+                    Campeonato Internacional de Ajedrez en Barcelona!</p>
+
+            </section>
+
+
+
+        </article>
+
+        <include src="./views/blockquote.html"></include>
+        <include src="./views/evento.html"></include>
+    </main>
+
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>
